@@ -45,5 +45,13 @@ module TinderPyro
     def update_location(latitude, longitude)
       @requestor.post_request("user/ping", lat: latitude, lon: longitude)
     end
+
+    def auth_token
+      @requestor.auth_token
+    end
+
+    def auth_token=(new_token)
+      @requestor.auth_token = new_token
+    end
   end
 end

@@ -2,6 +2,8 @@ module TinderPyro
   class Requestor
     include HTTParty
 
+    attr_accessor :auth_token
+
     base_uri 'https://api.gotinder.com'
 
     def auth_request(facebook_id, facebook_token)
