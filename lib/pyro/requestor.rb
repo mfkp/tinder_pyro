@@ -48,7 +48,11 @@ module TinderPyro
     def default_headers
       {
         'Content-Type' => 'application/json; charset=utf-8',
-        'User-Agent' => 'Tinder/3.0.2 (iPhone; iOS 7.0.4; Scale/2.00)'
+        'User-Agent' => 'Tinder/4.0.9 (iPhone; iOS 8.0.2; Scale/2.00)',
+        'Accept-Language' => 'en;q=1',
+        'platform' => 'ios',
+        'app-version' => '123',
+        'os_version' => '80000000002'
       }
     end
   end
